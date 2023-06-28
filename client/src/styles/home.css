@@ -28,21 +28,92 @@
     width: 100%;
     height: 350px;
     border-radius: 20px;
-    border: 1px solid var(--primary-color);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     object-fit: cover;
 }
-.hero__content{
+
+.hero__content {
     padding-top: 2rem;
 }
-.services__subtitle{
+
+.services__subtitle {
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(80, 22, 28);
 }
-.services__title{
-     font-size: 2.5rem;
+
+.services__title {
+    font-size: 2.5rem;
 }
-.featured-title{
+
+.featured-title {
     font-size: 2.3rem;
     font-weight: 500;
+}
+
+.Cities {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 38vw 38vw;
+    grid-auto-rows: 18vw;
+    grid-gap: 1vw;
+    cursor: pointer;
+    border: 1px solid #fafcff;
+    box-sizing: border-box;
+}
+
+.Cities img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.manchester {
+    position: relative;
+
+
+}
+
+.headmanchester {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    top: 2vw;
+    left: 2.5vw;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.78em;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+
+}
+
+.childmanchester {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    color: #fff;
+    top: 4vw;
+    left: 2.5vw;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.citythree {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-auto-rows: 12vw;
+    grid-gap: 1vw;
+    cursor: pointer;
+    height: 270px;
+    margin-bottom: 20px;
+}
+
+.citythree img {
+    width: 100%;
+    height: 250px;
 }

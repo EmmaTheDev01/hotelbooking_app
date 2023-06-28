@@ -22,7 +22,7 @@
     color: inherit;
  }
  .nav__item a.active__link{
-    color: var(--secondary-color);
+    color: var(--primary-color);
  }
  .mobile__menu{
     font-size: 1.3rem;

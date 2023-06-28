@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/home.css'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap' 
 import heroVid from '../assets/images/1.mp4'
 import heroImg02 from '../assets/images/1.jpg'
 import herovid from '../assets/images/1.jpg'

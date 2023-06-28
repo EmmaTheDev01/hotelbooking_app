@@ -44,12 +44,7 @@ import hotel1 from "../images/1.jpg";
     price: 99,
     maxGroupSize: 8,
     desc: "this is the description",
-    reviews: [
-      {
-        name: "jhon doe",
-        rating: 4.6,
-      },
-    ],
+    reviews: [ ],
     avgRating: 4.1,
     photo: hotel1,
     featured: true,
@@ -62,15 +57,10 @@ import hotel1 from "../images/1.jpg";
     price: 99,
     maxGroupSize: 10,
     desc: "this is the description",
-    reviews: [
-      {
-        name: "jhon doe",
-        rating: 4.6,
-      },
-    ],
+    reviews: [],
     avgRating: 4.5,
     photo: hotel1,
-    featured: true,
+    featured: false,
   },
   {
     id: "02",
@@ -88,7 +78,7 @@ import hotel1 from "../images/1.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
-    featured: true,
+    featured: false,
   },
   {
     id: "03",
@@ -124,7 +114,7 @@ import hotel1 from "../images/1.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
-    featured: true,
+    featured: false,
   },
   {
     id: "02",
@@ -142,7 +132,7 @@ import hotel1 from "../images/1.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
-    featured: true,
+    featured: false,
   },
 
 ];

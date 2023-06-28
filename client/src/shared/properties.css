@@ -1,0 +1,76 @@
+.property-img img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+
+}
+.property-img{
+    position: relative;
+}
+.property-img span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 1.4ch;
+    font-weight: 500;
+    padding: 0.3rem 0.3rem;
+    border-radius: 3px 0 0 0;
+}
+.property-card{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+}
+.card-top span .icon{
+    padding: 0.4rem;
+    color: var(--primary-color);
+}
+.property-rating{
+    
+    font-size: .9rem;
+    color: var(--text-color);
+}
+.property-location{
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: .9rem;
+}
+.property-title{
+    font-size: 1.7ch;
+    padding: 0.1rem;
+    text-decoration: none;
+}
+.property-title a{
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: .3s;
+}
+.property-title a:hover{
+    color: var(--secondary-color);
+}
+.card-bottom h5{
+    color: var(--secondary-color);
+    font-size: 2ch;
+    font-weight: 700; 
+}
+.card-bottom h5 span{
+    color: var(--secondary-color);
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--text-color); 
+}
+.reserve-btn{
+    background-color: var(--primary-color) !important;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+}
+.reserve-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+  

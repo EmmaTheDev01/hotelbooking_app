@@ -55,7 +55,7 @@ const FooterWhite = () => {
                 </div>
             </div>
 
-            <div style={{ width: "100%", margin: "auto", textAlign: "center", fontSize: "15px" }}>Copyright © 2023 250Heights. All rights reserved.</div>
+            <div style={{ width: "100%",padding:"1rem",backgroundColor:"#ededed", margin: "auto", textAlign: "center", fontSize: "15px" }}>Copyright © 2023 250Heights. All rights reserved.</div>
            
         </>
     )

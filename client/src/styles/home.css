@@ -31,3 +31,18 @@
     border: 1px solid var(--secondary-color);
     object-fit: cover;
 }
+.hero__content{
+    padding-top: 2rem;
+}
+.services__subtitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(80, 22, 28);
+}
+.services__title{
+     font-size: 2.5rem;
+}
+.featured-title{
+    font-size: 2.3rem;
+    font-weight: 500;
+}

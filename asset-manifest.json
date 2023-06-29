@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hotelbooking_app/static/css/main.e8baeec2.css",
+    "main.js": "/hotelbooking_app/static/js/main.7b475ba8.js",
+    "static/media/2.mp4": "/hotelbooking_app/static/media/2.47c7bea4f81983afad3e.mp4",
+    "static/media/14.jpg": "/hotelbooking_app/static/media/14.c3c5063e5ea7262f8481.jpg",
+    "static/media/5.jpg": "/hotelbooking_app/static/media/5.6aa885e0fcfe6f9e4c6c.jpg",
+    "static/media/2.jpg": "/hotelbooking_app/static/media/2.35daa0ba59e78c5d0788.jpg",
+    "static/media/4.jpg": "/hotelbooking_app/static/media/4.80b419599b26584df7a8.jpg",
+    "static/media/1.jpg": "/hotelbooking_app/static/media/1.c422d468a45a5cca92f6.jpg",
+    "static/media/15.jpg": "/hotelbooking_app/static/media/15.4dcb3b27f363814ab868.jpg",
+    "static/media/logo.png": "/hotelbooking_app/static/media/logo.aaa5b1ff7bd93e9539f2.png",
+    "static/media/12.jpg": "/hotelbooking_app/static/media/12.38d271051790763db8fa.jpg",
+    "static/media/9.jpg": "/hotelbooking_app/static/media/9.d0abd5d38c238c7c846b.jpg",
+    "static/media/17.jpg": "/hotelbooking_app/static/media/17.bcaf542a1eaf4c01e178.jpg",
+    "static/media/7.jpg": "/hotelbooking_app/static/media/7.96dcddb15ae7802d680f.jpg",
+    "static/media/11.jpg": "/hotelbooking_app/static/media/11.6f5b224ac7a2fb3bf6cc.jpg",
+    "index.html": "/hotelbooking_app/index.html",
+    "main.e8baeec2.css.map": "/hotelbooking_app/static/css/main.e8baeec2.css.map",
+    "main.7b475ba8.js.map": "/hotelbooking_app/static/js/main.7b475ba8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8baeec2.css",
+    "static/js/main.7b475ba8.js"
+  ]
+}

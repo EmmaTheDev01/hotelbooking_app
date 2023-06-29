@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import { Container, Row, Col } from 'reactstrap'
-import heroVid from '../assets/images/1.mp4'
+import heroVid from '../assets/images/2.mp4'
 import heroImg01 from '../assets/images/11.jpg'
 import heroImg03 from '../assets/images/12.jpg'
 import Img02 from '../assets/images/15.jpg'
@@ -13,6 +13,7 @@ import SearchBar from '../shared/SearchBar'
 import Subtitle from '../shared/Subtitle'
 import ServiceList from '../services/ServiceList'
 import FeaturedHotels from '../components/Featured-hotels/FeaturedHotels'
+
 
 const Home = () => {
   return (
@@ -86,41 +87,48 @@ const Home = () => {
       {/* Begginning of cities browse */}
       <Container>
         <Row>
-          <Col lg='12' className='mb-5'>
+          <Col lg='12' className='mb-1'>
             <Subtitle subtitle={'Popular city in Rwanda'} />
             <h2 className='featured-title'>Popular Cities</h2>
           </Col>
-          <div className="Cities">
-            <div className="manchester">
+          <div className="Cities d-flex align-items-center justify-content-between gap-0">
+            <div className="city-section">
               <img src={Img02} alt="avatar2" />
-              <span className="headmanchester">Kigali</span>
-              <p className="childmanchester">84 properties</p>
+              <span className="headcity-section">Kigali</span>
+              <p className="childcity-section">84 properties</p>
             </div>
-            <div className="manchester">
-              <span className="headmanchester">Huye</span>
-              <p className="childmanchester">6 properties</p>
+            <div className="city-section">
+              <span className="headcity-section">Huye</span>
+              <p className="childcity-section">6 properties</p>
               <img src={Img03} alt="avatar2" />
             </div>
           </div>
-          <div className="citythree">
-            <div className="manchester">
+          <div className="citythree d-flex align-items-center justify-content-between gap3">
+            <div className="city-section">
               <img src={Img04} alt="avatar2" />
-              <span className="headmanchester">Musanze</span>
-              <p className="childmanchester">7 properties</p>
+              <span className="headcity-section">Musanze</span>
+              <p className="childcity-section">7 properties</p>
             </div>
-            <div className="manchester">
+            <div className="city-section">
               <img src={Img05} alt="avatar2" />
-              <span className="headmanchester">Gisenyi</span>
-              <p className="childmanchester">20 properties</p>
+              <span className="headcity-section">Gisenyi</span>
+              <p className="childcity-section">20 properties</p>
             </div>
-            <div className="manchester">
+            <div className="city-section">
               <img src={Img06} alt="avatar2" />
-              <span className="headmanchester">Nyamata</span>
-              <p className="childmanchester">10 properties</p>
+              <span className="headcity-section">Nyamata</span>
+              <p className="childcity-section">10 properties</p>
             </div>
           </div>
         </Row>
       </Container>
+      <section>
+        <Container>
+          <Row>
+            
+          </Row>
+        </Container>
+      </section>
 
 
 

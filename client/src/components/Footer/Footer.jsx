@@ -77,9 +77,8 @@ const Footer = () => {
           paddingTop: "20px",
           paddingBottom: "15px",
           border: "none",
-          width: "100vw",
+          width: "100%",
           marginLeft: "-8px ",
-          //  marginTop: "-8px" ,
           overflowY: "hidden",
         }}
       >

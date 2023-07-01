@@ -46,6 +46,7 @@ ul {
   border: none !important;
   border-radius: 50px !important;
   padding: 0.4rem 1.5rem !important;
+  color: #fff;
 }
 
 .primary__btn a {

@@ -3,7 +3,8 @@ import { Form } from 'reactstrap'
 import './search-bar.css'
 import { Col, FormGroup } from 'reactstrap'
 import { useRef } from 'react'
-import { FaBook, FaMapMarkerAlt,  FaRoad, FaSearch, } from 'react-icons/fa'
+import { FaMapMarkerAlt,  FaRoad, FaSearch, } from 'react-icons/fa'
+import {HiUserGroup} from 'react-icons/hi'
 const SearchBar = () => {
 
     const locationRef = useRef('');
@@ -45,7 +46,7 @@ const SearchBar = () => {
                     </FormGroup>
                     <FormGroup className="d-flex gap-3 form__group ">
                         <span>
-                            <FaBook/>
+                            <HiUserGroup/>
                         </span>
                         <div>
                             <h6>Guest Number</h6>

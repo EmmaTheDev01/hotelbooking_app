@@ -24,10 +24,11 @@
 .property-card{
     border: none !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    margin-top: 1rem;
 
 }
 .card-top span .icon{
-    padding: 0.4rem;
+    padding-bottom: 1rem;
     color: var(--primary-color);
 }
 .property-rating{
@@ -46,11 +47,14 @@
     text-decoration: none;
 }
 .property-title a{
+
     text-decoration: none;
     color: var(--heading-color);
     transition: .3s;
+   
 }
 .property-title a:hover{
+    
     color: var(--secondary-color);
 }
 .card-bottom h5{

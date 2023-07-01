@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './booking.css'
-import { Form, FormGroup, ListGroup, ListGroupItem, Button, Modal } from 'reactstrap'
+import { Form, FormGroup, ListGroup, ListGroupItem, Button, Modal} from 'reactstrap'
 import { FaStar } from 'react-icons/fa'
 import {
     Carousel,
@@ -14,11 +14,34 @@ const Booking = ({ hotel }) => {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
-    const { photo, image_one, image_two, image_three, image_four,image_five,  price, reviews, avgRating } = hotel
+    const { photo, image_one, image_two, image_three, image_four, image_five, price, reviews, avgRating } = hotel
+
+    const [credentials, setCredentials] = useState({
+        userId: '01',
+        userEmail: 'example@email.com',
+        fullName: '',
+        phone: '',
+        guestNumber: 1,
+        fromDate: '',
+        toDate: '',
+
+    })
 
     const handleChange = e => {
+        setCredentials(prev => ({ ...prev, [e.target.id]: e.target.value }))
 
     }
+    const chargeFee = Number(price)*10/100;
+    const total = Number(price) * Number(credentials.guestNumber) + Number(chargeFee)
+    //sending data to the database server
+
+    const handleClick = e => {
+        e.preventDefault();
+        console.log(credentials);
+        
+    }
+
+
 
 
     const items = [
@@ -46,7 +69,7 @@ const Booking = ({ hotel }) => {
             src: image_five,
             key: 5,
         },
-        
+
     ];
 
 
@@ -124,9 +147,10 @@ const Booking = ({ hotel }) => {
                 </span>
             </div>
             {/* Booking form Column */}
+
             <div className='booking-form'>
                 <h5>Info</h5>
-                <Form className='booking-info-form'>
+                <Form className='booking-info-form' onSubmit={handleClick}>
                     <FormGroup>
                         <input type='text' placeholder='Full name' id='fullName' required onChange={handleChange} />
                     </FormGroup>
@@ -154,11 +178,21 @@ const Booking = ({ hotel }) => {
                 </ListGroup>
                 <ListGroup>
                     <ListGroupItem className='border-0 px-0'>
-                        <h5 className='d-flex align-items-center gap-1 '>${price} /per night</h5>
-                        <span>${price}</span>
+                        <h5 className='d-flex align-items-center gap-1 '>
+                        ${price}
+                        <span className='price-text'> /per night</span>
+                        </h5>
+                        <span className='highlighted-price'>Tax: ${chargeFee}</span>
+                    </ListGroupItem>
+                    <ListGroupItem className='border-0 px-0'>
+                    <span className=''>Total</span>
+                        <h5 className='d-flex align-items-center gap-1 '>
+                        ${total}
+                        <span className='price-text'> /per night</span>
+                        </h5>
                     </ListGroupItem>
                 </ListGroup>
-                <Button className='btn primary__btn w-100 mt-4'>Reserve Now</Button>
+                <Button className='btn primary__btn w-100 mt-4' onClick={handleClick}>Reserve Now</Button>
             </div>
         </div>
     )

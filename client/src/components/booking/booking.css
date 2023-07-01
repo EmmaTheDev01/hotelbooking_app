@@ -49,6 +49,17 @@
 .booking-bottom{
     padding: 1rem;
 }
+.booking-bottom .price-text{
+    font-size: 1rem;
+    color: var(--text-color);
+
+}
+.booking-bottom .highlighted-price{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    
+}
 .booking-bottom img{
     width: 5rem;
     height: 5rem;

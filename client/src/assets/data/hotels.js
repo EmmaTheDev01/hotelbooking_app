@@ -2,7 +2,7 @@ import hotel1 from "../images/1.jpg";
 import hotel2 from "../images/5.jpg";
 import hotel3 from "../images/2.jpg";
 import hotel4 from "../images/4.jpg";
- const hotels = [
+const hotels = [
   {
     id: "01",
     title: "Queen Elisabeth Golf appartment",
@@ -20,7 +20,7 @@ import hotel4 from "../images/4.jpg";
         rating: 4.6,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
         beds: 4.6,
@@ -28,6 +28,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.5,
     photo: hotel3,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: true,
   },
   {
@@ -47,14 +50,17 @@ import hotel4 from "../images/4.jpg";
         rating: 4.6,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
-        rating: 4.6,
+        beds: 4.6,
       },
     ],
     avgRating: 4.5,
     photo: hotel4,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: true,
   },
   {
@@ -68,7 +74,7 @@ import hotel4 from "../images/4.jpg";
     address: "Nyarutarama",
     street: 'KG 20 Ave',
     desc: "this is the description",
-    reviews: [ ],
+    reviews: [],
     rooms: [
       {
         roomName: "jhon doe",
@@ -77,6 +83,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.1,
     photo: hotel2,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: true,
   },
   {
@@ -104,10 +113,13 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: true,
   },
   {
-     
+
     id: "05",
     title: "Phoenix appartment",
     city: "Kigali",
@@ -124,7 +136,7 @@ import hotel4 from "../images/4.jpg";
         rating: 4.6,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
         beds: 4.6,
@@ -132,6 +144,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: false,
   },
   {
@@ -151,7 +166,7 @@ import hotel4 from "../images/4.jpg";
         rating: 4,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
         beds: 4,
@@ -159,6 +174,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.1,
     photo: hotel1,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: false,
   },
   {
@@ -178,7 +196,7 @@ import hotel4 from "../images/4.jpg";
         rating: 4.6,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
         beds: 4.6,
@@ -186,6 +204,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: false,
   },
   {
@@ -205,7 +226,7 @@ import hotel4 from "../images/4.jpg";
         rating: 4.6,
       },
     ],
-     rooms: [
+    rooms: [
       {
         roomName: "jhon doe",
         beds: 4.6,
@@ -213,6 +234,9 @@ import hotel4 from "../images/4.jpg";
     ],
     avgRating: 4.5,
     photo: hotel1,
+    image_one: hotel3,
+    image_two: hotel3,
+
     featured: false,
   },
 

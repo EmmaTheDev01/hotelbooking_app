@@ -1,0 +1,69 @@
+.booking{
+    padding: 2rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(228, 219, 219);
+    top: 80px;    
+}
+.booking-top h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.booking-top h3 span{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.booking-top span{
+    font-size: 1rem;
+}
+.property-rating span{
+    color: var(--primary-color);
+    padding: .5rem;
+}
+.booking-top {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(228, 219, 219);
+}
+.booking-form{
+    padding-top: 2rem; 
+}
+.booking-form h5{
+    margin-bottom: 0.5rem;
+}
+.booking-form input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--heading-color);
+    border: none;
+    border-bottom: 1px solid rgb(228, 219, 219);
+    font-size: 1rem;
+}
+.booking-form input:focus{
+    outline: none;
+}
+.booking-info-form{
+    border: 1px solid rgb(228, 219, 219);
+    padding: 0.5rem;
+}
+.booking-bottom{
+    padding: 1rem;
+}
+.booking-bottom img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+.other-images img{
+    padding: .2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.carousel{
+    width: 100%;
+   
+}
+.carousel-image{
+    width: 100%;
+    height: 600px;
+}

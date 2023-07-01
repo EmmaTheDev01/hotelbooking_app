@@ -14,7 +14,7 @@ const Booking = ({ hotel }) => {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
-    const { photo, image_one, image_two, price, reviews, avgRating } = hotel
+    const { photo, image_one, image_two, image_three, image_four,image_five,  price, reviews, avgRating } = hotel
 
     const handleChange = e => {
 
@@ -32,8 +32,21 @@ const Booking = ({ hotel }) => {
         },
         {
             src: image_two,
+            key: 2,
+        },
+        {
+            src: image_three,
             key: 3,
         },
+        {
+            src: image_four,
+            key: 4,
+        },
+        {
+            src: image_five,
+            key: 5,
+        },
+        
     ];
 
 

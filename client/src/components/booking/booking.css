@@ -59,21 +59,4 @@
   color: var(--secondary-color);
   font-weight: 700;
 }
-.booking-bottom img {
-  width: 4.4rem;
-  height: 4.4rem;
-  object-fit: cover;
-}
-.other-images img {
-  padding: 0.2rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.carousel {
-  width: 100%;
-}
-.carousel-image {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
+

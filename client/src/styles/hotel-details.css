@@ -108,7 +108,13 @@
 }
 .other-images img{
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.2rem;
+  object-fit: cover;
+}
+.carousel-image{
+  width: 100%;
+  height: 500px;
   object-fit: cover;
 }

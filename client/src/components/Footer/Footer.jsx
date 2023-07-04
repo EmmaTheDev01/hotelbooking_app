@@ -12,7 +12,12 @@ const input1 = {
   fontWeight: "100",
   paddingLeft: "8px",
 };
-const label = { color: "black", fontSize: "14px", padding: "0", marginLeft: "10px" };
+const label = {
+  color: "black",
+  fontSize: "14px",
+  padding: "0",
+  marginLeft: "10px",
+};
 const button = {
   backgroundColor: "rgb(0,53,128)",
   border: "none",
@@ -24,7 +29,7 @@ const button = {
   fontWeight: "100",
 };
 const p1 = {
-  color:"var(--primary-color)",
+  color: "var(--primary-color)",
   fontSize: "30px",
   fontWeight: "600",
   padding: "0",
@@ -41,9 +46,9 @@ const p2 = {
 const link = {
   color: "black",
   fontSize: "14px",
-  fontWeight: "500",  
-  textDecoration:"none"
-}
+  fontWeight: "500",
+  textDecoration: "none",
+};
 
 const Footer = () => {
   return (
@@ -56,13 +61,12 @@ const Footer = () => {
           textAlign: "center",
           width: "100vw",
           marginLeft: "-8px ",
-          overflowY: "hidden"
-
+          overflowY: "hidden",
         }}
       >
         <p style={p1}>Save time, save money!</p>
         <p style={p2}>Sign up and we'll send the best deals to you</p>
-        <div style={{ padding: "10px"}}>
+        <div style={{ padding: "10px" }}>
           <input style={input1} type="text" placeholder=" Your email" />
           <button style={button}>Subscribe</button>
         </div>
@@ -82,15 +86,32 @@ const Footer = () => {
           overflowY: "hidden",
         }}
       >
-        
-        <div style={{ width: "70%", margin: "auto", display: "flex", justifyContent: "space-between" }}>
-          <a href="/" style={link}>Mobile version</a>
-          <a href="/" style={link}>Your account</a>
-          <a href="/" style={link}>Make changes online to your booking</a>
-          <a href="/" style={link}>Contact Customer Service</a>
-          <a href="/" style={link}>Become an affiliate</a>
-          <a href="/" style={link}>Become an affiliate</a>
-          
+        <div
+          style={{
+            width: "70%",
+            margin: "auto",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <a href="/" style={link}>
+            Mobile version
+          </a>
+          <a href="/" style={link}>
+            Your account
+          </a>
+          <a href="/" style={link}>
+            Make changes online to your booking
+          </a>
+          <a href="/" style={link}>
+            Contact Customer Service
+          </a>
+          <a href="/" style={link}>
+            Become an affiliate
+          </a>
+          <a href="/" style={link}>
+            Become an affiliate
+          </a>
         </div>
       </div>
       <FooterWhite />

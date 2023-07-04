@@ -2,25 +2,23 @@ import hotel1 from "../images/1.jpg";
 import hotel2 from "../images/5.jpg";
 import hotel3 from "../images/2.jpg";
 import hotel4 from "../images/4.jpg";
-import roseone from "../images/rose01.jpg"
-import rosetwo from "../images/rose02.jpg"
-import rosethree from "../images/rose03.jpg"
-import rosefour from "../images/rose04.jpg"
-import rosefive from "../images/rose05.jpg"
+import roseone from "../images/rose01.jpg";
+import rosetwo from "../images/rose02.jpg";
+import rosethree from "../images/rose03.jpg";
+import rosefour from "../images/rose04.jpg";
+import rosefive from "../images/rose05.jpg";
 
-import elisabethOne  from "../images/elizabeth01.jpg"
-import elisabethTwo  from "../images/elizabeth02.jpg"
-import elisabethThree  from "../images/elizabeth03.jpg"
-import elisabethFour  from "../images/elizabeth04.jpg"
-import elisabethFive  from "../images/elizabeth05.jpg"
+import elisabethOne from "../images/elizabeth01.jpg";
+import elisabethTwo from "../images/elizabeth02.jpg";
+import elisabethThree from "../images/elizabeth03.jpg";
+import elisabethFour from "../images/elizabeth04.jpg";
+import elisabethFive from "../images/elizabeth05.jpg";
 
-import phxOne  from "../images/phoenix01.jpg"
-import phxTwo  from "../images/phoenix02.jpg"
-import phxThree  from "../images/phoenix03.jpg"
-import phxFour  from "../images/phoenix04.jpg"
-import phxFive  from "../images/phoenix05.jpg"
-
-
+import phxOne from "../images/phoenix01.jpg";
+import phxTwo from "../images/phoenix02.jpg";
+import phxThree from "../images/phoenix03.jpg";
+import phxFour from "../images/phoenix04.jpg";
+import phxFive from "../images/phoenix05.jpg";
 
 const hotels = [
   {
@@ -32,7 +30,7 @@ const hotels = [
     price: 280,
     guestNumber: 10,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -65,7 +63,7 @@ const hotels = [
     price: 160,
     guestNumber: 8,
     address: "Kanombe",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -98,7 +96,7 @@ const hotels = [
     price: 190,
     guestNumber: 8,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [],
     rooms: [
@@ -126,7 +124,7 @@ const hotels = [
     price: 280,
     guestNumber: 10,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -148,7 +146,6 @@ const hotels = [
     featured: true,
   },
   {
-
     id: "05",
     title: "Phoenix appartment",
     city: "Kigali",
@@ -157,7 +154,7 @@ const hotels = [
     price: 99,
     guestNumber: 8,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -187,7 +184,7 @@ const hotels = [
     price: 99,
     guestNumber: 8,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -217,7 +214,7 @@ const hotels = [
     price: 99,
     guestNumber: 10,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -247,7 +244,7 @@ const hotels = [
     price: 99,
     guestNumber: 8,
     address: "Nyarutarama",
-    street: 'KG 20 Ave',
+    street: "KG 20 Ave",
     desc: "this is the description",
     reviews: [
       {
@@ -268,7 +265,6 @@ const hotels = [
 
     featured: false,
   },
-
 ];
 
 export default hotels;

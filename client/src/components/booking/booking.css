@@ -1,8 +1,9 @@
 .booking {
+  position: sticky;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid rgb(228, 219, 219);
-  top: 80px;
+  top: 2px;
 }
 .booking-top h3 {
   font-size: 1.4rem;

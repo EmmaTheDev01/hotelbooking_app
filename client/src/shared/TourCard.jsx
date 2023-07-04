@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const TourCard = () => {
-  return (
-    <div>TourCard</div>
-  )
-}
+  return <div>TourCard</div>;
+};
 
-export default TourCard
+export default TourCard;

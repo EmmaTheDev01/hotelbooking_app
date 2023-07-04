@@ -34,7 +34,7 @@ const Login = () => {
                 </div>
                 <div className="user">{/* Image on a login page */}</div>
                 <h2>Login</h2>
-                <Form>
+                <Form onSubmit={handleClick}>
                   <FormGroup>
                     <input
                       type="email"
@@ -57,7 +57,7 @@ const Login = () => {
                     Login
                   </Button>
                   <p>
-                    Don't have an account? <Link to="/register">Create one</Link>
+                    Don't have an account? <Link to="/register">Create</Link>
                   </p>
                 </Form>
               </div>

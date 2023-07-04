@@ -24,7 +24,7 @@ const nav__Links = [
 ];
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header sticky__header">
       <Container>
         <Row>
           <div className="nav__wrapper d-flex align-items-center justify-content-between">

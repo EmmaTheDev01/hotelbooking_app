@@ -34,7 +34,7 @@
 .services__subtitle {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(80, 22, 28);
+  color: var(--secondary-color);
 }
 
 .services__title {

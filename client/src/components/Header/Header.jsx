@@ -6,20 +6,20 @@ import "../Header/header.css";
 
 const nav__Links = [
   {
-    path: "/home",
-    display: "Home",
-  },
-  {
-    path: "/about",
-    display: "About",
+    path: "/hotels",
+    display: "Hotels",
   },
   {
     path: "/tours",
     display: "Tours",
   },
   {
-    path: "/hotels",
-    display: "Hotels",
+    path: "/car-rental",
+    display: "Car rental",
+  },
+  {
+    path: "/support",
+    display: "Support",
   },
 ];
 const Header = () => {
@@ -30,7 +30,9 @@ const Header = () => {
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
             {/* Logo */}
             <div className="logo">
-              <img src={Logo} alt="logo" />
+              <Link to="/home">
+                <img src={Logo} alt="logo" />
+              </Link>
             </div>
             {/* Navigation Menu  */}
             <div className="Navigation">

@@ -2,13 +2,12 @@ import React from "react";
 import CommonSections from "../shared/CommonSections";
 import { Container, Row, Col } from "reactstrap";
 import SearchBar from "../shared/SearchBar";
-import HotelCard from "../shared/HotelCard";
-import HotelData from "../assets/data/hotels";
+import TourCard from "../shared/TourCard";
+import tourData from '../assets/data/tours'
 const Tours = () => {
   return (
     <div>
       <CommonSections title={"All Tours"} />
-
       <section>
         <Container>
           <Row>
@@ -19,9 +18,9 @@ const Tours = () => {
       <section className="pt-1">
         <Container>
           <Row>
-            {HotelData?.map((hotel) => (
-              <Col lg="3" key={hotel.id}>
-                <HotelCard hotel={hotel} />
+            {tourData?.map((tour) => (
+              <Col lg="6" key={tour.id}>
+                <TourCard tour={tour} />
               </Col>
             ))}
           </Row>

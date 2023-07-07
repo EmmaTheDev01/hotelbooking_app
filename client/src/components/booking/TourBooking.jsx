@@ -4,8 +4,8 @@ import { Form, FormGroup, ListGroup, ListGroupItem, Button } from "reactstrap";
 import { FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Booking = ({ hotel }) => {
-  const { price, reviews, avgRating } = hotel;
+const TourBooking = ({ tour }) => {
+  const { price, reviews, avgRating } = tour;
 
   const [credentials, setCredentials] = useState({
     userId: "01",
@@ -102,7 +102,7 @@ const Booking = ({ hotel }) => {
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1 ">
               ${price}
-              <span className="price-text"> /per night</span>
+              <span className="price-text"> /per person</span>
             </h5>
             <span className="highlighted-price">Tax: ${chargeFee}</span>
           </ListGroupItem>
@@ -110,16 +110,16 @@ const Booking = ({ hotel }) => {
             <span className="">Total</span>
             <h5 className="d-flex align-items-center gap-1 ">
               ${total}
-              <span className="price-text"> /per night</span>
+              <span className="price-text"> /per person</span>
             </h5>
           </ListGroupItem>
         </ListGroup>
         <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>
-          Reserve Now
+         Book Tour
         </Button>
       </div>
     </div>
   );
 };
 
-export default Booking;
+export default TourBooking;

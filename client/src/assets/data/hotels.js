@@ -1,24 +1,24 @@
-import hotel1 from "../images/1.jpg";
-import hotel2 from "../images/5.jpg";
-import hotel3 from "../images/2.jpg";
-import hotel4 from "../images/4.jpg";
-import roseone from "../images/rose01.jpg";
-import rosetwo from "../images/rose02.jpg";
-import rosethree from "../images/rose03.jpg";
-import rosefour from "../images/rose04.jpg";
-import rosefive from "../images/rose05.jpg";
+import hotel1 from "../images/hotels/1.jpg";
+import hotel2 from "../images/hotels/5.jpg";
+import hotel3 from "../images/hotels/2.jpg";
+import hotel4 from "../images/hotels/4.jpg";
+import roseone from "../images/hotels/rose01.jpg";
+import rosetwo from "../images/hotels/rose02.jpg";
+import rosethree from "../images/hotels/rose03.jpg";
+import rosefour from "../images/hotels/rose04.jpg";
+import rosefive from "../images/hotels/rose05.jpg";
 
-import elisabethOne from "../images/elizabeth01.jpg";
-import elisabethTwo from "../images/elizabeth02.jpg";
-import elisabethThree from "../images/elizabeth03.jpg";
-import elisabethFour from "../images/elizabeth04.jpg";
-import elisabethFive from "../images/elizabeth05.jpg";
+import elisabethOne from "../images/hotels/elizabeth01.jpg";
+import elisabethTwo from "../images/hotels/elizabeth02.jpg";
+import elisabethThree from "../images/hotels/elizabeth03.jpg";
+import elisabethFour from "../images/hotels/elizabeth04.jpg";
+import elisabethFive from "../images/hotels/elizabeth05.jpg";
 
-import phxOne from "../images/phoenix01.jpg";
-import phxTwo from "../images/phoenix02.jpg";
-import phxThree from "../images/phoenix03.jpg";
-import phxFour from "../images/phoenix04.jpg";
-import phxFive from "../images/phoenix05.jpg";
+import phxOne from "../images/hotels/phoenix01.jpg";
+import phxTwo from "../images/hotels/phoenix02.jpg";
+import phxThree from "../images/hotels/phoenix03.jpg";
+import phxFour from "../images/hotels/phoenix04.jpg";
+import phxFive from "../images/hotels/phoenix05.jpg";
 
 const hotels = [
   {
@@ -178,7 +178,7 @@ const hotels = [
   {
     id: "06",
     title: "Rose Garden",
-    city: "Thailand",
+    city: "kigali",
     country: "Rwanda",
     distance: 500,
     price: 99,

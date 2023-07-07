@@ -13,22 +13,22 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 import { useParams } from "react-router-dom";
-import hotelData from "../assets/data/hotels";
+import tourData from "../assets/data/tours";
 import { FaCity, FaDollarSign, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "../styles/hotel-details.css";
 import calculateAvgRating from "../utils/avgRating";
 import avatar from "../assets/images/1.png";
-import HotelBooking from "../components/booking/HotelBooking";
+import TourBooking from "../components/booking/TourBooking";
 
-const HotelDetails = () => {
+const TourDetails = () => {
   const reviewNote = useRef("");
-  const [hotelRating, setHotelRating] = useState(null);
+  const [tourRating, setTourRating] = useState(null);
 
   const { id } = useParams();
   //Static data from local file for now
-  const hotel = hotelData.find((hotel) => hotel.id === id);
+  const tour = tourData.find((tour) => tour.id === id);
 
-  //Destructuring and presenting data properties from our hotel object
+  //Destructuring and presenting data properties from our tour object
 
   const {
     photo,
@@ -43,11 +43,8 @@ const HotelDetails = () => {
     desc,
     price,
     reviews,
-    address,
-    city,
-    street,
-    rooms,
-  } = hotel;
+    city
+  } = tour;
   const { totalRating, avgRating } = calculateAvgRating(reviews);
   //Date formats
   const options = { day: "numeric", month: "long", year: "numeric" };
@@ -116,7 +113,7 @@ const HotelDetails = () => {
     e.preventDefault();
     const reviewtext = reviewNote.current.value;
 
-    alert(`${reviewtext}, ${hotelRating}`);
+    alert(`${reviewtext}, ${tourRating}`);
   };
 
   return (
@@ -189,17 +186,14 @@ const HotelDetails = () => {
                       </span>
                       {city}, {country}
                     </span>
-                    <span className="">{rooms.roomName}</span>
-                    <span className="">{rooms.beds}</span>
+                   
                   </div>
                   <div className="property-details">
-                    <span>
+                   
                       <span className="det-icon">
                         <FaMapMarkerAlt />
-                      </span>
-                      {address}
-                    </span>
-                    <span className=""> {street}</span>
+                        </span>
+                     
                     <span className="">
                       <span className="det-icon">
                         <FaDollarSign />
@@ -214,25 +208,25 @@ const HotelDetails = () => {
                   <h5>Description</h5>
                   <p>{desc}</p>
                 </div>
-                {/* Hotel reviews preview section */}
+                {/* tour reviews preview section */}
                 <div className="property-info">
                   <div className="property-details-reviews mt-4">
                     <h4>Reviews ({reviews?.length} reviews)</h4>
                     <Form onSubmit={submitHandler}>
                       <div className="d-flex align-items-center gap-3 mb-4 rating-group ">
-                        <span onClick={() => setHotelRating(1)}>
+                        <span onClick={() => setTourRating(1)}>
                           <FaStar />
                         </span>
-                        <span onClick={() => setHotelRating(2)}>
+                        <span onClick={() => setTourRating(2)}>
                           <FaStar />
                         </span>
-                        <span onClick={() => setHotelRating(3)}>
+                        <span onClick={() => setTourRating(3)}>
                           <FaStar />
                         </span>
-                        <span onClick={() => setHotelRating(4)}>
+                        <span onClick={() => setTourRating(4)}>
                           <FaStar />
                         </span>
-                        <span onClick={() => setHotelRating(5)}>
+                        <span onClick={() => setTourRating(5)}>
                           <FaStar />
                         </span>
                       </div>
@@ -268,7 +262,7 @@ const HotelDetails = () => {
                               </span>
                             </div>
                             <h6>
-                              I recommend you this hotel, they provide amazing
+                              I recommend you this tour, they provide amazing
                               overall services.
                             </h6>
                           </div>
@@ -295,7 +289,7 @@ const HotelDetails = () => {
                               </span>
                             </div>
                             <h6>
-                              I recommend you this hotel, they provide amazing
+                              I recommend you this tour, they provide amazing
                               overall services.
                             </h6>
                           </div>
@@ -307,7 +301,7 @@ const HotelDetails = () => {
               </div>
             </Col>
             <Col lg="4">
-              <HotelBooking hotel={hotel} avgRating={avgRating} />
+              <TourBooking tour={tour} avgRating={avgRating} />
             </Col>
           </Row>
         </Container>
@@ -316,4 +310,4 @@ const HotelDetails = () => {
   );
 };
 
-export default HotelDetails;
+export default TourDetails;

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import SearchBar from "../shared/SearchBar";
 import TourCard from "../shared/TourCard";
 import tourData from '../assets/data/tours'
+import SideSearch from '../components/search/SIdeSearch'
 const Tours = () => {
   return (
     <div>
@@ -18,11 +19,17 @@ const Tours = () => {
       <section className="pt-1">
         <Container>
           <Row>
-            {tourData?.map((tour) => (
-              <Col lg="6" key={tour.id}>
+          <Col lg='3'>
+            <SideSearch />
+          </Col>
+          <Col lg='9'>
+          {tourData?.map((tour) => (
+              <Col lg="12" key={tour.id}>
                 <TourCard tour={tour} />
               </Col>
             ))}
+          </Col>
+           
           </Row>
         </Container>
       </section>

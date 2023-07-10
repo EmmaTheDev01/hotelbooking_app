@@ -13,6 +13,8 @@ import SearchBar from '../shared/SearchBar'
 import Subtitle from '../shared/Subtitle'
 import ServiceList from '../services/ServiceList'
 import FeaturedHotels from '../components/Featured-hotels/FeaturedHotels'
+import SimpleSlider from '../components/slider/SimpleSlider'
+
 
 
 const Home = () => {
@@ -66,30 +68,19 @@ const Home = () => {
               <h5 className='services__subtitle'>
                 What we offer
               </h5>
-              <h2 className='services__title'>We deliver</h2>
+              <h3 className='services__title'>We deliver</h3>
             </Col>
             <ServiceList />
           </Row>
         </Container>
       </section>
-      {/* Beginning of featured hotels section */}
       <section>
-        <Container>
-          <Row>
-            <Col lg='12' className='mb-5'>
-              <Subtitle subtitle={'Featured hotels'} />
-              <h2 className='featured-title'>Our Featured Hotels</h2>
-            </Col>
-            <FeaturedHotels />
-          </Row>
-        </Container>
-      </section>
-      {/* Begginning of cities browse */}
+         {/* Begginning of cities browse */}
       <Container>
         <Row>
           <Col lg='12' className='mb-1'>
             <Subtitle subtitle={'Popular city in Rwanda'} />
-            <h2 className='featured-title'>Popular Cities</h2>
+            <h3 className='featured-title'>Popular Cities in Rwanda</h3>
           </Col>
           <div className="Cities d-flex align-items-center justify-content-between gap-0">
             <div className="city-section">
@@ -122,10 +113,28 @@ const Home = () => {
           </div>
         </Row>
       </Container>
+      </section>
+      {/* Beginning of featured hotels section */}
       <section>
         <Container>
           <Row>
-            
+            <Col lg='12' className='mb-5'>
+              <Subtitle subtitle={'Featured hotels'} />
+              <h3 className='featured-title'>Our Featured Hotels</h3>
+            </Col>
+            <FeaturedHotels />
+          </Row>
+        </Container>
+      </section>
+       {/* Slider of amenities section */}
+       <section>
+        <Container>
+          <Row>
+          <Col lg='12' className='mb-5'>
+              <Subtitle subtitle={'Your Choice'} />
+              <h3 className='featured-title'>Browse from your choice</h3>
+            </Col>
+             <SimpleSlider/>
           </Row>
         </Container>
       </section>

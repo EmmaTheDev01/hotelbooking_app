@@ -1,6 +1,6 @@
 .property-img img {
-  width: 100%;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px 5px 0px 0px;
   object-fit: cover;
 }
@@ -9,7 +9,7 @@
 }
 .property-img span {
   position: absolute;
-  bottom: 0;
+  bottom:3%;
   right: 0;
   width: max-content;
   height: max-content;
@@ -22,29 +22,51 @@
   border-radius: 3px 0 0 0;
 }
 .property-card {
+  display: flex;
+  justify-content: flex-start;
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   margin-top: 1rem;
 }
+.card-top{
+  padding-left: 1rem;
+  position: relative;
+  line-height: normal;
+}
+ 
 .card-top span .icon {
-  margin-top: -.2rem;
+ 
   color: var(--primary-color);
+}
+.card-top p{
+  margin-top: 3rem;
+  color: var(--text-color);
+  width: 100%;
+  height: 200px;
 }
 .property-rating {
   font-size: 0.9rem;
   color: var(--text-color);
 }
 .property-location {
+  position: absolute;
+  z-index: 10;
+  bottom: 5%;
   color: var(--heading-color);
   font-weight: 500;
   font-size: 0.9rem;
 
 }
 .property-title {
-  font-size: 1.7ch;
+  font-size: 2.3ch;
   margin-top: 1rem;
   padding: 0.1rem;
+  width: 450px;
   text-decoration: none;
+}
+.property-title span{
+  margin-left: 1rem;
+ 
 }
 .property-title a {
   text-decoration: none;
@@ -55,8 +77,11 @@
   color: var(--secondary-color);
 }
 .card-bottom h5 {
-  color: var(--secondary-color);
-  font-size: 2ch;
+  position: absolute;
+  right: -10%;
+  bottom: 20%;
+  color: var(--heading-color);
+  font-size: 3ch;
   font-weight: 700;
 }
 .card-bottom h5 span {
@@ -64,11 +89,18 @@
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-color);
+  margin-top: 1rem;
 }
 .reserve-btn {
+  position: absolute;
+  z-index: 10;
+  margin-top: 10rem;
+  bottom: 5%;
+  right: -10%;
   background-color: var(--primary-color) !important;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
+  
 }
 .reserve-btn a {
   text-decoration: none;

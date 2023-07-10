@@ -43,3 +43,27 @@
   box-shadow: 3px 3px 8px -3px #ddd;
   z-index: 999;
 }
+.nav-right-links li{
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  text-decoration: none !important;
+}
+.nav-right-links a{
+  color: var(--heading-color);
+  text-decoration: none !important;
+}
+.topbar-search{
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  height: 40px;
+}
+.topbar-srch-btn{
+  border: none;
+  height: 40px;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  background-color: transparent;
+}

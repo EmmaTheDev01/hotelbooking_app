@@ -1,0 +1,85 @@
+.tour-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.tour-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.tour-img span{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    z-index: 10;
+    margin-top: 16.7rem;
+    margin-left: -4rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: .8rem;
+    padding: 0.3rem;
+    font-weight: 600;
+    border-radius: 0px 3px 0px 3px;
+}
+.tour-card-top{
+  margin-top: -9rem;
+  margin-left: 1rem;
+}
+.tour-title{
+  margin-top: 0%;
+  width: 450px;
+}
+
+.tour-title a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--heading-color);
+}
+.tour-icon{
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: .5rem;
+}
+.tour-rating{
+  margin-left: 1rem;
+  font-size: .9rem;
+}
+.tour-card-bottom{
+  margin-top: 1rem;
+  width: 350px;
+}
+.tour-card-bottom p{
+  color: var(--text-color);
+}
+.tour-card-bottom h5{
+  position: absolute;
+  margin-top: 4.5rem;
+  margin-left: 22rem;
+}
+.tour-card-bottom span{
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.tour-location{
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: -1rem;
+}
+.tour-btn{
+  position: absolute;
+  margin-top: 7rem;
+  margin-left: 22rem;
+  background-color: var(--primary-color) !important;
+
+}
+.tour-btn:hover{
+ background-color: var(--secondary-color) !important;
+}
+.tour-btn a{
+ text-decoration: none;
+ color: #fff !important;
+ font-weight: 600;
+}

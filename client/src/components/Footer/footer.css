@@ -25,6 +25,7 @@
     padding: .5rem;
     width: 100%;
     border: 1px solid var(--heading-color);
+    border: none;
     border-radius: 50px;
 }
 .subscribe-inputs input{
@@ -32,6 +33,7 @@
     width: 73%;
     padding: .5rem;
     color: var(--text-color);
+    border: none;
 }
 .subscribe-inputs input:focus{
    outline: none;
@@ -44,4 +46,64 @@
     border-radius: 50px;
     color: #fff;
     font-weight: 500;
+}
+@media screen and (max-width: 600px){
+
+    .subscribe-section{
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+    .contents p{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .subscribe-inputs input{
+        border: none;
+        width: 60%;
+        padding: .5rem;
+        color: var(--text-color);
+        border: none;
+    }
+    .subscribe-inputs{
+        background-color: #fff;
+        padding: .5rem;
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+    }
+    
+}
+@media screen and (max-width: 400px){
+
+    .subscribe-section{
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+    .contents p{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .subscribe-inputs input{
+        border: none;
+        width: 55%;
+        padding: .5rem;
+        color: var(--text-color);
+        border: none;
+    }
+    .subscribe-inputs{
+        background-color: #fff;
+        padding: .5rem;
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+    }
+    
 }

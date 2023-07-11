@@ -3,7 +3,7 @@ import { Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import "../Header/header.css";
-
+import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -37,8 +37,8 @@ const Header = () => {
                   </svg>
                   Support</Link></li>
               </div>
-              <span className="mobile_menu">
-                <i class="ri-menu-line"></i>
+              <span className="mobile__menu">
+                <FaBars/>
               </span>
             </div>
           </div>

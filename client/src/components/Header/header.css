@@ -54,6 +54,7 @@
 .nav-right-links a{
   color: var(--heading-color);
   text-decoration: none !important;
+  font-size: 1rem;
 }
 .topbar-search{
   border: none;

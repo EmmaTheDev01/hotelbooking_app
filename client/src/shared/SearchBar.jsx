@@ -23,7 +23,7 @@ const SearchBar = () => {
     <Col lg="12">
       <div className="search__bar">
         <Form className="d-flex align-items-center gap-4">
-          <FormGroup className="d-flex gap-3 form__group form__group-fast">
+          <FormGroup className="d-flex gap-3 form__group full form__group-fast">
             <span>
               <FaMapMarkerAlt />
             </span>
@@ -31,7 +31,7 @@ const SearchBar = () => {
               <h6>Location</h6>
               <input
                 type="text"
-                placeholder="Where do you wish to stay?"
+                placeholder="City or country"
                 ref={locationRef}
               />
             </div>
@@ -45,7 +45,7 @@ const SearchBar = () => {
               <h6>Distance</h6>
               <input
                 type="number"
-                placeholder="Distance Km"
+                placeholder="0 Km"
                 ref={distanceRef}
               />
             </div>
@@ -55,7 +55,7 @@ const SearchBar = () => {
               <HiUserGroup />
             </span>
             <div>
-              <h6>Guest Number</h6>
+              <h6>Guests</h6>
               <input type="number" placeholder="0" ref={guestNumberRef} />
             </div>
           </FormGroup>

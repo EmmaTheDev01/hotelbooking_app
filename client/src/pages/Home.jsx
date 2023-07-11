@@ -82,7 +82,8 @@ const Home = () => {
             <Subtitle subtitle={'Popular city in Rwanda'} />
             <h3 className='featured-title'>Popular Cities in Rwanda</h3>
           </Col>
-          <div className="Cities d-flex align-items-center justify-content-between gap-0">
+          <div className='cities-section'>
+          <div className="Cities">
             <div className="city-section">
               <img src={Img02} alt="avatar2" />
               <span className="headcity-section">Kigali</span>
@@ -94,7 +95,7 @@ const Home = () => {
               <img src={Img03} alt="avatar2" />
             </div>
           </div>
-          <div className="citythree d-flex align-items-center justify-content-between gap3">
+          <div className="citythree">
             <div className="city-section">
               <img src={Img04} alt="avatar2" />
               <span className="headcity-section">Musanze</span>
@@ -110,13 +111,16 @@ const Home = () => {
               <span className="headcity-section">Nyamata</span>
               <p className="childcity-section">10 properties</p>
             </div>
+            </div>
           </div>
+         
+          
         </Row>
       </Container>
       </section>
       {/* Beginning of featured hotels section */}
       <section>
-        <Container>
+        <Container className='d-flex align-items-center justify-content-between gap-1'>
           <Row>
             <Col lg='12' className='mb-5'>
               <Subtitle subtitle={'Featured hotels'} />

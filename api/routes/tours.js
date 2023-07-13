@@ -6,9 +6,9 @@ const router = express.Router()
 
 //create a new Tour 
 
-router.post("/", createTour);
+router.post("/", verifyAdmin, createTour);
 //update a Tour 
-// verifyAdmin
+
 router.put("/:id",verifyAdmin, updateTour);
 //delete a Tour
 

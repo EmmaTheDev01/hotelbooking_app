@@ -117,7 +117,7 @@ export const getHotelBySearch = async (req, res) => {
 
 
     try {
-        const hotelSearch = await Hotel.find({ city, title, distance: { $gte: distance }, rooms: { $gte: rooms } }).populate('reviews') 
+        const hotelSearch = await Hotel.find({ city:{$gte:city}, title:{ $gte: title}, distance: { $gte: distance } }).populate('reviews') 
 
         res.status(200).json({
 

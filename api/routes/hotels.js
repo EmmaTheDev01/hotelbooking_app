@@ -6,9 +6,9 @@ const router = express.Router()
 
 //create a new hotel 
 
-router.post("/",verifyAdmin, createHotel);
+router.post("/", createHotel);
 //update a hotel 
-
+// verifyAdmin
 router.put("/:id",verifyAdmin, updateHotel);
 //delete a hotel
 

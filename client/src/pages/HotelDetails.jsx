@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Container,
   Row,
@@ -13,20 +13,22 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 import { useParams } from "react-router-dom";
-import hotelData from "../assets/data/hotels";
 import { FaCity, FaDollarSign, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "../styles/hotel-details.css";
 import calculateAvgRating from "../utils/avgRating";
 import avatar from "../assets/images/1.png";
 import HotelBooking from "../components/booking/HotelBooking";
+import {BASE_URL} from '../utils/config';
+import useFetch from '../hooks/useFetch'
 
 const HotelDetails = () => {
   const reviewNote = useRef("");
   const [hotelRating, setHotelRating] = useState(null);
 
-  const { id } = useParams();
-  //Static data from local file for now
-  const hotel = hotelData.find((hotel) => hotel.id === id);
+  const { _id } = useParams();
+ //Fetch data from the database
+
+ const {data : hotel,loading, error} = useFetch(`${BASE_URL}/hotel/${_id}`) 
 
   //Destructuring and presenting data properties from our hotel object
 
@@ -46,7 +48,6 @@ const HotelDetails = () => {
     address,
     city,
     street,
-    rooms,
   } = hotel;
   const { totalRating, avgRating } = calculateAvgRating(reviews);
   //Date formats
@@ -119,10 +120,20 @@ const HotelDetails = () => {
     alert(`${reviewtext}, ${hotelRating}`);
   };
 
+   useEffect(() =>{
+        window.scrollTo(0,0)
+  }, [hotel])
+
   return (
     <>
       <section>
         <Container>
+        {
+          loading && <h4 className="text-center pt-5">Loading...</h4>
+        }
+        {
+          error && <h4 className="text-center pt-5">{error}</h4>
+        }
           <Modal isOpen={modal} toggle={toggle}>
             <Carousel
               className="carousel"
@@ -148,7 +159,8 @@ const HotelDetails = () => {
               />
             </Carousel>
           </Modal>
-          <Row>
+          {
+            !loading && error && <Row>
             <Col lg="8">
               <div className="property-content">
                 <img src={photo} onClick={toggle} alt="property_image" />
@@ -189,8 +201,7 @@ const HotelDetails = () => {
                       </span>
                       {city}, {country}
                     </span>
-                    <span className="">{rooms.roomName}</span>
-                    <span className="">{rooms.beds}</span>
+                   
                   </div>
                   <div className="property-details">
                     <span>
@@ -204,7 +215,7 @@ const HotelDetails = () => {
                       <span className="det-icon">
                         <FaDollarSign />
                       </span>
-                      <span className="price">{price}</span> /night
+                      <span className="price">{ price }</span> /night
                     </span>
                     <span className=""></span>
                   </div>
@@ -310,6 +321,7 @@ const HotelDetails = () => {
               <HotelBooking hotel={hotel} avgRating={avgRating} />
             </Col>
           </Row>
+          }
         </Container>
       </section>
     </>

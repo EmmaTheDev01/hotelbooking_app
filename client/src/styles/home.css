@@ -59,7 +59,7 @@
 }
 
 .Cities img {
-  width: 100%;
+  width: 450px;
   height: 365px;
   object-fit: cover;
   margin: .5rem;
@@ -97,13 +97,14 @@
 
 .citythree {
   display: flex;
+  justify-content: center;
   cursor: pointer;
   height: auto;
   margin-bottom: 20px;
 }
 
 .citythree img {
-  width: 400px;
+  width: 330px;
   height: 300px;
   margin: 0.5rem;
 }

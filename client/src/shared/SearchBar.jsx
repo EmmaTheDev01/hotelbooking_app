@@ -5,12 +5,16 @@ import { Col, FormGroup } from "reactstrap";
 import { useRef } from "react";
 import { FaMapMarkerAlt, FaRoad, FaSearch } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
+import { BASE_URL } from "../utils/config";
+import { useNavigate } from 'react-router-dom';
+
 const SearchBar = () => {
   const locationRef = useRef("");
   const distanceRef = useRef(0);
   const guestNumberRef = useRef(0);
+  const navigate = useNavigate()
 
-  const searchHandler = () => {
+  const searchHandler = async () => {
     const location = locationRef.current.value;
     const distance = distanceRef.current.value;
     const guestNumber = guestNumberRef.current.value;
@@ -18,6 +22,13 @@ const SearchBar = () => {
     if (location === "" || distance === "" || guestNumber === "") {
       return alert("All fields are required");
     }
+    const res = await fetch(`${BASE_URL}results/search/getHotelBySearch?city=${location}&distance=${distance}&guests=${guestNumber}`)
+
+    if (!res.ok) alert('Something went wrong');
+    const result = await res.json()
+
+    navigate(`/results/search?city=${location}&distance=${distance}&guestNumber=${guestNumber}`,
+      { state: result.data })
   };
   return (
     <Col lg="12">

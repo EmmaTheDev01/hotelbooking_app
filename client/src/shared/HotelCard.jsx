@@ -5,7 +5,7 @@ import "./properties.css";
 import calculateAvgRating from "../utils/avgRating";
 
 const HotelCard = ({ hotel }) => {
-  const { id, title, photo, country, city, featured, reviews, price,desc } = hotel;
+  const { _id, title, photo, country, city, featured, reviews, price,desc } = hotel;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
@@ -19,7 +19,7 @@ const HotelCard = ({ hotel }) => {
        
           <div className="card-top ">
           <h5 className="property-title">
-            <Link to={`/hotel/${id}`}>{title}</Link>
+            <Link to={`/hotel/${_id}`}>{title}</Link>
 
             <span className="property-rating">
               <span className="icon">
@@ -40,7 +40,7 @@ const HotelCard = ({ hotel }) => {
            
           <div className="card-bottom">
             <h5>
-              {price}
+              ${price}
               <span> /night</span>
             </h5>
             <span className="property-location">
@@ -50,7 +50,7 @@ const HotelCard = ({ hotel }) => {
               {city},{country}
             </span>
             <button className="btn reserve-btn">
-              <Link to={`/hotel/${id}`}>Reserve</Link>
+              <Link to={`/hotel/${_id}`}>Reserve</Link>
             </button>
           </div>
           </div>

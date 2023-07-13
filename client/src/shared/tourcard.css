@@ -83,3 +83,73 @@
  color: #fff !important;
  font-weight: 600;
 }
+@media screen and (max-width:600px) {
+
+  .tour-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+  
+.tour-card-top{
+  margin-top: 1rem;
+ text-align: center;
+}
+
+
+
+.tour-title a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--heading-color);
+}
+.tour-icon{
+  color: var(--primary-color);
+  font-size: .8rem;
+  margin: .5rem;
+}
+.tour-rating{
+  margin-left: 1rem;
+  font-size: .9rem;
+}
+.tour-card-bottom{
+  margin-top: 1rem;
+  width: 350px;
+}
+.tour-card-bottom p{
+  color: var(--text-color);
+}
+.tour-card-bottom h5{
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.tour-card-bottom span{
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.tour-location{
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: -1rem;
+}
+.tour-btn{
+  position: absolute;
+  margin-top: 7rem;
+  margin-left: 22rem;
+  background-color: var(--primary-color) !important;
+
+}
+.tour-btn:hover{
+ background-color: var(--secondary-color) !important;
+}
+.tour-btn a{
+ text-decoration: none;
+ color: #fff !important;
+ font-weight: 600;
+}
+  
+}

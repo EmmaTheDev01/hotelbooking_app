@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react'
 import CommonSections from '../shared/CommonSections'
 import HotelCard from '../shared/HotelCard'
-
-import HotelData from '../assets/data/hotels'
 import { Col, Container, Row } from 'reactstrap'
 import '../styles/hotels.css'
-import SIdeSearch from '../components/search/SIdeSearch'
+import SideSearch from '../components/search/SIdeSearch'
+
+import {BASE_URL} from '../utils/config'
+import useFetch from '../hooks/useFetch'
+
 const Hotels = () => {
 
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
+    const {data: hotels, loading, error} = useFetch(`${BASE_URL}/hotels?page=${page}`);
+    const {data: hotelCount} = useFetch(`${BASE_URL}/hotels/search/getHotelCount`);
   useEffect(() => {
 
-    const pages = Math.ceil(5 / 4);
+    const pages = Math.ceil(hotelCount / 8);
     setPageCount(pages);
-
-  }, [page]);
+    window.scrollTo(0,0);
+  }, [page, hotelCount, hotels]);
 
   return (
     <>
@@ -25,14 +29,18 @@ const Hotels = () => {
       <section className='pt-1'>
 
         <Container>
-          <Row>
+
+        {loading && <h4 className='text-center pt-5'>Loading...</h4>}
+        {error && <h4 className='text-center pt-5'>{error}</h4>}
+          {
+            !loading && !error && <Row>
             <Col lg='3' className='mb-1'>
-              <SIdeSearch />
+              <SideSearch />
             </Col>
             <Col lg='9'>
               {
-                HotelData?.map(hotel => (
-                  <Col lg='12' className='mb-1' key={hotel.id}>
+                hotels?.map(hotel => (
+                  <Col lg='12' className='mb-1' key={hotel._id}>
                     <HotelCard hotel={hotel} />
                   </Col>)
                 )
@@ -46,6 +54,7 @@ const Hotels = () => {
               </div>
             </Col>
           </Row>
+          }
         </Container>
       </section>
     </>

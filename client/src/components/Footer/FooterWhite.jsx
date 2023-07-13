@@ -1,5 +1,8 @@
 import React from "react";
+const col = {
 
+  padding: "10px",
+}
 const p = {
   color: "var(--secondary-color)",
   fontSize: "13px",
@@ -11,6 +14,7 @@ const p = {
 
 const FooterWhite = () => {
   return (
+
     <>
       <div
         style={{
@@ -18,11 +22,13 @@ const FooterWhite = () => {
           margin: "auto",
           backgroundColor: "white",
           padding: "10px",
+          overflow:"hidden",
           display: "flex",
+          flexWrap:"wrap",
           justifyContent: "space-between",
         }}
       >
-        <div>
+        <div style={col}>
           <p style={p}>Countries</p>
           <p style={p}>Regions</p>
           <p style={p}>Cities</p>
@@ -31,7 +37,7 @@ const FooterWhite = () => {
           <p style={p}>Hotels</p>
           <p style={p}>Places of interests</p>
         </div>
-        <div>
+        <div style={col}>
           <p style={p}>Homes</p>
           <p style={p}>Apartments</p>
           <p style={p}>Resorts</p>
@@ -40,7 +46,7 @@ const FooterWhite = () => {
           <p style={p}>B&Bs</p>
           <p style={p}>Guest houses</p>
         </div>
-        <div>
+        <div style={col}>
           <p style={p}>Unique places to stay</p>
           <p style={p}>All destinations</p>
           <p style={p}>Reviews</p>
@@ -48,13 +54,13 @@ const FooterWhite = () => {
           <p style={p}>Travel communities</p>
           <p style={p}>Seasonal and holiday deals</p>
         </div>
-        <div>
+        <div style={col}> 
           <p style={p}>Car rental</p>
           <p style={p}>Flight finder</p>
           <p style={p}>Restaurant reservations</p>
           <p style={p}>Booking.com for Travel Agents</p>
         </div>
-        <div>
+        <div style={col}>
           <p style={p}>Safety Resource Center</p>
           <p style={p}>Investor relations</p>
           <p style={p}>Terms & conditions</p>
@@ -68,10 +74,9 @@ const FooterWhite = () => {
         style={{
           width: "100%",
           padding: "1rem",
-          backgroundColor: "#ededed",
           margin: "auto",
           textAlign: "center",
-          fontSize: "15px",
+          fontSize: "13px",
         }}
       >
         Copyright © 2023 250Heights. All rights reserved.

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const hotelSchema = new mongoose.Schema(
+const TourSchema = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -11,18 +11,7 @@ const hotelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    street:{
-      type: String,
-      required: true,
-    },
-    country:{
-      type: String,
-      required:true,
-    },
-    address: {
-      type: String,
-      required: true,
-    },
+    
     distance: {
       type: Number,
       required: true,
@@ -35,34 +24,11 @@ const hotelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    avgRating:{
-      type: Number,
-    },
     price: {
       type: Number,
       required: true,
     },
-    guestNumber: {
-      type: Number,
-      
-    },
-    rooms: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: 'Room',
-      }
-    ],
-    reviews: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: "Review",
-      },
-    ],
 
-    featured: {
-      type: Boolean,
-      default: false,
-    },
     image_one:{
       type : String,
     },
@@ -78,8 +44,19 @@ const hotelSchema = new mongoose.Schema(
     image_five:{
       type:String,
     },
+    reviews: [
+      {
+        type: mongoose.Types.ObjectId,
+        ref: "Review",
+      },
+    ],
+
+    featured: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
 
-export default mongoose.model("Hotel", hotelSchema);
+export default mongoose.model("Tour", TourSchema);

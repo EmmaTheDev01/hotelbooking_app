@@ -47,6 +47,20 @@
     color: #fff;
     font-weight: 500;
 }
+
+.footer-bottom{
+    width: 100%;
+    padding: 1rem;
+}
+.footer-bottom p{
+  display: block;
+}
+.footer-links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 600px){
 
     .subscribe-section{
@@ -77,7 +91,7 @@
     }
     
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width:600px){
 
     .subscribe-section{
         background-color: var(--primary-color);
@@ -105,5 +119,4 @@
         border: none;
         border-radius: 50px;
     }
-    
 }
